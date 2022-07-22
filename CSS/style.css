@@ -28,8 +28,6 @@ header {
     padding: 0 1rem;
     margin: 2rem 0rem;
 }
-
-
 .hamburgericon {
     width: 25px;
     aspect-ratio: 1;
@@ -91,10 +89,12 @@ header {
 }
 
 /* HEADER SECTION  */
+
+/* MAIN SECTION  STARTS HERE  */
 .main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
   margin: 2rem 0rem;
   padding: 0 1rem;
@@ -164,10 +164,14 @@ p {
   transform: rotateX(180deg);
 }
 
+/* MAIN SECTION  ENDS HERE  */
+
+
 /* DISHES SECTION STARTS HERE  */
 .dishes {
   display: flex;
   justify-content: space-between;
+  margin: min(4%,3rem) 0rem;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
@@ -406,6 +410,54 @@ footer{
 }
 /* FOOTER ENDS HERE  */
 
+
+/* FULL SCREEN BURGER STARTS HERE  */
+.fullscreenimage
+{
+  background: url('../images/3007283.jpg');
+  width: 100vw;
+  max-width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding:2rem 1rem;
+}
+.burgertextwrapper
+{
+
+  max-width: 620px;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.abovetext
+{
+  position: relative;
+  /* background-color: rebeccapurple; */
+  padding:2rem 0rem;
+  /* top: 50%; */
+}
+.fastfood
+{
+  font-family: var(--ff-open-sans);
+  font-size: 3rem;
+}
+.musttry
+{
+  font-family: var(--ff-ubuntu);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  /* padding: 1rem 0rem; */
+}
+.aider
+{
+  font-size: 1rem;
+}
+/* FULL SCREEN BURGER ENDS HERE  */
+
 /* MEDIA QUERIES ********************* */
 
 @media (min-width: 340px) {
@@ -434,23 +486,25 @@ footer{
 .cart-btn{
     padding: 1em 1.4em;
 }
+
 }
 @media (min-width: 768px) {
-    .about-us
-    {
+  .fastfood{font-size: 4rem;}
+  .about-us
+  {
         flex-direction: row;
-    }
-  .main {
-    flex-direction: row;
+      }
+      .main {
+        flex-direction: row;
   }
   .burgername
-{
- margin: 2rem 0rem 1rem 0rem; 
- font-size: 1.5rem;
-}
-.cart-btn{
+  {
+    margin: 2rem 0rem 1rem 0rem; 
+    font-size: 1.5rem;
+  }
+  .cart-btn{
     padding: 1.3em 1.8em;
-}
+  }
   .wrapper-burger {
     flex-direction: row;
   }
@@ -463,6 +517,7 @@ footer{
 }
 
 @media (min-width: 1024px) {
+  .fastfood{font-size: 6rem;}
     .footerwrapper{flex-direction: row;}
   .blob {
     max-width: 600px;
@@ -501,6 +556,7 @@ footer{
   {
    margin: 3rem 0rem 1rem 0rem; 
   }
+  .fullscreenimage{padding: 1rem 4rem;}
 }
 
 
